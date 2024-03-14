@@ -11,24 +11,42 @@ struct ContentView: View {
     var body: some View {
         
         VStack( ){
-            Text("Hello World")
-                .font(.title)
-                .foregroundColor(.blue)
-            
-            
-            
-            HStack() {
-                Text("THis is SwiftUI")
-                    .font(.subheadline)
-                    .foregroundColor(.green)
-                Spacer()
-                Text("THis is SwiftUI")
-                    .font(.subheadline)
-                    .foregroundColor(.green)
-            
-            }.padding(10.0)
             
             MapView()
+                .frame(height: 400)
+            
+            ImageView()
+                .offset(y : -130)
+                .padding(.bottom , -130)
+            
+            VStack(alignment: .leading) {
+                Text("Paul MIchael")
+                    .font(.title)
+                    .foregroundColor(.blue)
+                
+                
+    
+                HStack() {
+                    Text("THis is SwiftUI")
+                    Spacer()
+                    Text("THis is SwiftUI")
+                }
+                .font(.subheadline)
+                .foregroundColor(.secondary)
+                Divider()
+                
+                Text("About Paul Michael")
+                    .font(.title2)
+                    .foregroundColor(.blue)
+                
+                Text("Description texts goes here ..")
+                
+                Spacer()
+            }.padding()
+            
+            
+            
+            
         }
     }
 }

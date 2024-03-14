@@ -1,11 +1,11 @@
 {
   "images" : [
     {
-      "filename" : "twigaa.jpg",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
+      "filename" : "twigaa.jpg",
       "idiom" : "universal",
       "scale" : "2x"
     },
